@@ -1,5 +1,10 @@
+#system
 .DS_Store
 
+#report
+output.json
+pytest_html_report.html
+archive
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

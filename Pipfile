@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 selenium = "*"
 pytest-xdist = "*"
+pytest-html-reporter = "*"
 
 [requires]
 python_version = "3.8"

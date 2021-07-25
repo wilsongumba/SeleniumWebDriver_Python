@@ -6,6 +6,7 @@ import json
 import pytest
 import selenium.webdriver
 
+from pytest_html_reporter import attach
 
 @pytest.fixture
 def config(scope='session'):
@@ -43,6 +44,7 @@ def browser(config):
 
   # Return the WebDriver instance for the setup
   yield b
+  attach(data=b.get_screenshot_as_png())
 
   # Quit the WebDriver instance for the cleanup
   b.quit()
